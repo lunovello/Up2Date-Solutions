@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Up2Date Solutions Inc.</title>
+    <title>
+      UP2DATE Solutions - IT Consulting - Quality, Without Compromise
+    </title>
+    <link rel="shortcut icon" href="images\FAVICON-01.png" />
+    <script
+      src="https://kit.fontawesome.com/e61eb0ac0f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="nav-primary nav-container" id="home">
-      <img class="logo" src="images\Up2Date Solution logo-white.svg" alt="" />
+      <a href="#home"
+        ><img class="logo" src="images\Up2Date Solution logo-white.svg" alt=""
+      /></a>
       <ul>
-        <li class="nav-links"><a href="">Home</a></li>
-        <li class="nav-links"><a href="">Why Choose Us?</a></li>
-        <li class="nav-links"><a href="">Services</a></li>
+        <li class="nav-links"><a href="#home">Home</a></li>
+        <li class="nav-links"><a href="#about">Why Choose Us?</a></li>
+        <li class="nav-links"><a href="#services">Services</a></li>
       </ul>
-      <button class="nav btn nav-btn">Contact Us</button>
+      <a href="#contact"><button class="nav btn nav-btn">Contact Us</button></a>
     </nav>
     <header class="hero-slideshow">
       <div class="hero-1 slide container">
@@ -24,7 +33,7 @@
           Certified and trusted professionals for all your IT solution
           requirements.
         </p>
-        <button class="btn">Learn More</button>
+        <a href="#contact"><button class="btn">Learn More</button></a>
       </div>
       <div class="hero-2 slide container">
         <h1>Solutions To Help Your Business Grow</h1>
@@ -33,7 +42,7 @@
           ever growing digital world. Learn how to transition and adopt
           solutions for remote working in your business!
         </p>
-        <button class="btn">Learn More</button>
+        <a href="#contact"><button class="btn">Learn More</button></a>
       </div>
       <div class="hero-3 slide container">
         <h1>Migrate to Microsoft 365</h1>
@@ -42,12 +51,17 @@
           features that can empower your business to grow, stay relevant, and
           ensure compliance.
         </p>
-        <button class="btn">Learn More</button>
+        <a href="#contact"><button class="btn">Learn More</button></a>
+      </div>
+      <div class="slider-dots">
+        <div class="dot1"><i class="fa-solid fa-circle"></i></div>
+        <div class="dot2"><i class="fa-solid fa-circle"></i></div>
+        <div class="dot3"><i class="fa-solid fa-circle"></i></div>
       </div>
     </header>
-    <section class="about container">
+    <section class="about container" id="about">
       <div class="about-text">
-        <h4 class="about-text-heading">Why Choose Us?</h4>
+        <h1 class="heading">Why Choose Us?</h1>
         <hr class="center-line" />
         <p>
           UP2DATE is an Innovative IT Consulting company committed to staying
@@ -59,68 +73,100 @@
       </div>
       <img class="about-image" src="images\Why-Choose-Us.jpg" alt="" />
     </section>
-    <section class="services container">
-      <h4 class="services-heading">Services</h4>
+    <section class="services container" id="services">
+      <h1 class="heading">Services</h1>
       <hr class="center-line white" />
-      <div class="service">
-        <h3 class="service-heading">Technical Focus Areas:</h3>
-        <ul>
-          <li>
-            Collaboration (Microsoft 365, EMS + Intune, Azure ADC, ADFS
-            Authentication, Exchange Online, Microsoft Teams, SharePoint, and
-            Advanced Threat Protection)
-          </li>
-          <li>
-            Infrastructure (Windows Server, Hyper-V and Azure Virtualization –
-            Windows Virtual Environment)
-          </li>
-          <li>Directory Services (Active Directory, Azure AD)</li>
-        </ul>
-      </div>
-      <div class="service">
-        <h3 class="service-heading">Service Focus Areas:</h3>
-        <ul>
-          <li>Operations Management</li>
-          <li>Consulting + Architecting</li>
-          <li>Migrations (Messaging, SharePoint, Skype, Tenant to Tenant)</li>
-          <li>Assessment and Planning</li>
-          <li>System Build and Deployment</li>
-        </ul>
-      </div>
-      <div class="service">
-        <h3 class="service-heading">Leadership Focus Areas:</h3>
-        <ul>
-          <li>
-            Empowering organization success through the effective use of team
-            resources
-          </li>
-          <li>Ongoing Skill and Career development</li>
-          <li>
-            Active Prioritization to achieve short term requirements and
-            long-term goals
-          </li>
-        </ul>
+      <div class="services-wrapper">
+        <div class="service1 service">
+          <div class="icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h5 class="service-heading">Technical Focus Areas</h5>
+          <ul>
+            <li>
+              Collaboration (Microsoft 365, EMS + Intune, Azure ADC, ADFS
+              Authentication, Exchange Online, Microsoft Teams, SharePoint, &
+              Advanced Threat Protection)
+            </li>
+            <li>
+              Infrastructure (Windows Server, Hyper-V and Azure Virtualization –
+              Windows Virtual Environment)
+            </li>
+            <li>Directory Services (Active Directory, Azure AD)</li>
+          </ul>
+        </div>
+        <div class="service2 service">
+          <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h5 class="service-heading">Service Focus Areas</h5>
+          <ul>
+            <li>Operations Management</li>
+            <li>Consulting + Architecting</li>
+            <li>Migrations (Messaging, SharePoint, Skype, Tenant to Tenant)</li>
+            <li>Assessment and planning</li>
+            <li>System build and deployment</li>
+          </ul>
+        </div>
+        <div class="service3 service">
+          <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h5 class="service-heading">Leadership Focus Areas</h5>
+          <ul>
+            <li>
+              Empowering organization success through the effective use of team
+              resources
+            </li>
+            <li>Ongoing skill and career development</li>
+            <li>
+              Active prioritization to achieve short term requirements and
+              long-term goals
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="partners container"></section>
-    <section class="contact-us container">
-      <h2>Ready to talk?</h2>
-      <hr class="center-diamond" />
+    <section class="partners container" id="partners">
+      <h1 class="heading">Partners</h1>
+      <hr class="center-line" />
+    </section>
+    <section class="contact container" id="contact">
+      <h1 class="heading">Ready to talk?</h1>
+      <hr class="center-line white" />
       <p>
         Contact us today to learn more about how we can help your business
         succeed.
       </p>
-      <label for="name">Name</label><input type="text" id="name" />
-      <label for="company">Company</label><input type="text" id="company" />
-      <label for="email">Email Address</label><input type="email" id="email" />
-      <label for="phone">Phone Number</label><input type="tel" id="phone" />
-      <label for="subject">Subject</label><input type="text" id="subject" />
-      <label for="message">Message</label
-      ><textarea name="message" id="message" cols="30" rows="5"></textarea>
-      <button>Submit</button>
-      <form action="#"></form>
+      <form class="contact-form" action="#">
+        <div class="formline1">
+          <div class="form-name">
+            <label for="name" class="required">Name </label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-email">
+            <label for="email" class="required">Email Address </label>
+            <input type="email" id="email" required />
+          </div>
+        </div>
+        <div class="formline2">
+          <div class="form-company">
+            <label for="company">Company </label>
+            <input type="text" id="company" />
+          </div>
+          <div class="form-phone">
+            <label for="phone" class="form-phone">Phone Number </label>
+            <input type="tel" id="phone" />
+          </div>
+        </div>
+        <div class="formline3 form-subject">
+          <label for="subject" class="form-subject">Subject </label>
+          <input type="text" id="subject" />
+        </div>
+        <div class="formline4 form-message">
+          <label for="message" class="form-message">Message </label>
+          <textarea name="message" id="message" cols="91" rows="8"></textarea>
+        </div>
+        <button class="btn">Submit</button>
+      </form>
     </section>
-    <footer class="footer container">
+    <footer class="footer">
       <p>
         Copyright &copy;
         <script>
