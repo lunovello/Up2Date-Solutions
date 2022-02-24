@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body>
-    <nav class="nav-primary nav-container" id="home">
+    <nav class="nav-primary" id="home">
       <a href="#home"
         ><img class="logo" src="images\Up2Date Solution logo-white.svg" alt=""
       /></a>
@@ -24,10 +24,15 @@
         <li class="nav-links"><a href="#about">Why Choose Us?</a></li>
         <li class="nav-links"><a href="#services">Services</a></li>
       </ul>
-      <a href="#contact"><button class="nav btn nav-btn">Contact Us</button></a>
+      <div>
+        <a href="#contact"
+          ><button class="nav btn nav-btn">Contact Us</button></a
+        >
+      </div>
     </nav>
-    <header class="hero-slideshow">
-      <div class="hero-1 slide container">
+    <header class="hero-slideshow" id="hero-slideshow">
+    <div id="slides">
+      <div class="hero-1 slide container" id="slide1">
         <h1>Quality Without Compromise</h1>
         <p>
           Certified and trusted professionals for all your IT solution
@@ -53,10 +58,15 @@
         </p>
         <a href="#contact"><button class="btn">Learn More</button></a>
       </div>
-      <div class="slider-dots">
-        <div class="dot1"><i class="fa-solid fa-circle"></i></div>
-        <div class="dot2"><i class="fa-solid fa-circle"></i></div>
-        <div class="dot3"><i class="fa-solid fa-circle"></i></div>
+    </div>
+    <div class="slider-arrows">
+        <i class="fa-solid fa-angle-left slider-prev" id="slider-prev"></i>
+        <i class="fa-solid fa-angle-right slider-next" id="slider-next"></i>
+    </div>
+      <div class="slider-dots" id="slider-dots">
+        <div class="dot1 dot"></div>
+        <div class="dot2 dot"></i></div>
+        <div class="dot3 dot"></div>
       </div>
     </header>
     <section class="about container" id="about">
@@ -126,6 +136,36 @@
     <section class="partners container" id="partners">
       <h1 class="heading">Partners</h1>
       <hr class="center-line" />
+      <div class="partner-logos-container">
+        <div class="partner-logo-wrapper"><a href="https://www.microsoft.com/en-ca" target="_blank"><img
+          src="images\Partner Logos\Microsoft Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper"><a href="https://www.logitech.com/en-ca" target="_blank"><img
+          src="images\Partner Logos\Logitech Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper"><a href="https://www.bittitan.com/" target="_blank"><img
+          src="images\Partner Logos\BitTitan Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper"><a href="https://ui.com/consoles" target="_blank"><img
+          src="images\Partner Logos\Unifi Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper"><a href="https://www.audiocodes.com/" target="_blank"><img
+          src="images\Partner Logos\Audiocodes Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper"><a href="https://www.hpe.com/us/en/home.html" target="_blank"><img
+          src="images\Partner Logos\Hewlett-Packard Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper"><a href="https://www.jabra.ca/" target="_blank"><img
+          src="images\Partner Logos\Jabra Carousel.png"
+          alt=""
+          class="partner-logo"/></a></div>
+      </div>
     </section>
     <section class="contact container" id="contact">
       <h1 class="heading">Ready to talk?</h1>
@@ -175,5 +215,7 @@
         | Up 2 Date Solutions Inc. | All Rights Reserved.
       </p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
