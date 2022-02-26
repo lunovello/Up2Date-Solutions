@@ -31,43 +31,45 @@
       </div>
     </nav>
     <header class="hero-slideshow" id="hero-slideshow">
-    <div id="slides">
-      <div class="hero-1 slide container" id="slide1">
-        <h1>Quality Without Compromise</h1>
-        <p>
-          Certified and trusted professionals for all your IT solution
-          requirements.
-        </p>
-        <a href="#contact"><button class="btn">Learn More</button></a>
+      <div id="slides">
+        <div class="hero-1 slide container">
+          <h1>Quality Without Compromise</h1>
+          <p>
+            Certified and trusted professionals for all your IT solution
+            requirements.
+          </p>
+          <a href="#contact"><button class="btn">Learn More</button></a>
+        </div>
+        <div class="hero-2 slide container">
+          <h1>Solutions To Help Your Business Grow</h1>
+          <p>
+            Let our team of advisors show you how your business can compete in
+            an ever growing digital world. Learn how to transition and adopt
+            solutions for remote working in your business!
+          </p>
+          <a href="#contact"><button class="btn">Learn More</button></a>
+        </div>
+        <div class="hero-3 slide container">
+          <h1>Migrate to Microsoft 365</h1>
+          <p>
+            Learn the benefits of Microsoft Azure, Office 365 and other security
+            features that can empower your business to grow, stay relevant, and
+            ensure compliance.
+          </p>
+          <a href="#contact"><button class="btn">Learn More</button></a>
+        </div>
       </div>
-      <div class="hero-2 slide container">
-        <h1>Solutions To Help Your Business Grow</h1>
-        <p>
-          Let our team of advisors show you how your business can compete in an
-          ever growing digital world. Learn how to transition and adopt
-          solutions for remote working in your business!
-        </p>
-        <a href="#contact"><button class="btn">Learn More</button></a>
+      <div class="slider-arrows" id="slider-arrows">
+        <button
+          class="fa-solid fa-angle-left slider-prev"
+          id="slider-prev"
+        ></button>
+        <button
+          class="fa-solid fa-angle-right slider-next"
+          id="slider-next"
+        ></button>
       </div>
-      <div class="hero-3 slide container">
-        <h1>Migrate to Microsoft 365</h1>
-        <p>
-          Learn the benefits of Microsoft Azure, Office 365 and other security
-          features that can empower your business to grow, stay relevant, and
-          ensure compliance.
-        </p>
-        <a href="#contact"><button class="btn">Learn More</button></a>
-      </div>
-    </div>
-    <div class="slider-arrows">
-        <i class="fa-solid fa-angle-left slider-prev" id="slider-prev"></i>
-        <i class="fa-solid fa-angle-right slider-next" id="slider-next"></i>
-    </div>
-      <div class="slider-dots" id="slider-dots">
-        <div class="dot1 dot"></div>
-        <div class="dot2 dot"></i></div>
-        <div class="dot3 dot"></div>
-      </div>
+      <div class="slider-dots" id="slider-dots"></div>
     </header>
     <section class="about container" id="about">
       <div class="about-text">
@@ -137,34 +139,62 @@
       <h1 class="heading">Partners</h1>
       <hr class="center-line" />
       <div class="partner-logos-container">
-        <div class="partner-logo-wrapper"><a href="https://www.microsoft.com/en-ca" target="_blank"><img
-          src="images\Partner Logos\Microsoft Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
-        <div class="partner-logo-wrapper"><a href="https://www.logitech.com/en-ca" target="_blank"><img
-          src="images\Partner Logos\Logitech Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
-        <div class="partner-logo-wrapper"><a href="https://www.bittitan.com/" target="_blank"><img
-          src="images\Partner Logos\BitTitan Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
-        <div class="partner-logo-wrapper"><a href="https://ui.com/consoles" target="_blank"><img
-          src="images\Partner Logos\Unifi Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
-        <div class="partner-logo-wrapper"><a href="https://www.audiocodes.com/" target="_blank"><img
-          src="images\Partner Logos\Audiocodes Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
-        <div class="partner-logo-wrapper"><a href="https://www.hpe.com/us/en/home.html" target="_blank"><img
-          src="images\Partner Logos\Hewlett-Packard Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
-        <div class="partner-logo-wrapper"><a href="https://www.jabra.ca/" target="_blank"><img
-          src="images\Partner Logos\Jabra Carousel.png"
-          alt=""
-          class="partner-logo"/></a></div>
+        <div class="partner-logo-wrapper">
+          <a href="https://www.microsoft.com/en-ca" target="_blank"
+            ><img
+              src="images\Partner Logos\Microsoft Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
+        <div class="partner-logo-wrapper">
+          <a href="https://www.logitech.com/en-ca" target="_blank"
+            ><img
+              src="images\Partner Logos\Logitech Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
+        <div class="partner-logo-wrapper">
+          <a href="https://www.bittitan.com/" target="_blank"
+            ><img
+              src="images\Partner Logos\BitTitan Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
+        <div class="partner-logo-wrapper">
+          <a href="https://ui.com/consoles" target="_blank"
+            ><img
+              src="images\Partner Logos\Unifi Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
+        <div class="partner-logo-wrapper">
+          <a href="https://www.audiocodes.com/" target="_blank"
+            ><img
+              src="images\Partner Logos\Audiocodes Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
+        <div class="partner-logo-wrapper">
+          <a href="https://www.hpe.com/us/en/home.html" target="_blank"
+            ><img
+              src="images\Partner Logos\Hewlett-Packard Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
+        <div class="partner-logo-wrapper">
+          <a href="https://www.jabra.ca/" target="_blank"
+            ><img
+              src="images\Partner Logos\Jabra Carousel.png"
+              alt=""
+              class="partner-logo"
+          /></a>
+        </div>
       </div>
     </section>
     <section class="contact container" id="contact">
@@ -216,6 +246,6 @@
       </p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
