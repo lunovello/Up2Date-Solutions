@@ -219,9 +219,8 @@ hr {
   flex-direction: column;
   position: fixed;
   inset: 0 0 0 120%;
-  border: 4px ridge white;
+  border-left: 4px ridge white;
   border-radius: 20px;
-  /* border-right: 5px ridge white; */
   background: #0095ff25;
   box-shadow: inset 5px 0 15px black;
   backdrop-filter: blur(10px) contrast(0.5) saturate(2);
