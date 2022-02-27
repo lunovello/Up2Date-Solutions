@@ -7,11 +7,12 @@ let activeDot;
 let nextSlide;
 let nextDot;
 
-// Initializing slideshow timer
+// Initializing slideshow timer ---------------
 let heroSlideshowInt = setInterval(changeSlide, sliderTime);
 initSlider();
 changeDots();
 
+// SLIDESHOW ---------------
 function initSlider() {
   // Creating slide ids and dots based on slide count
   const slideArr = [...slides.children];
@@ -50,7 +51,6 @@ function changeSlide() {
   nextDot.classList.add("dot-active");
   heroSlideshowInt = setInterval(changeSlide, sliderTime);
 }
-
 // set click events to arrows
 sliderArrows.addEventListener("click", function (event) {
   event.preventDefault();
@@ -78,7 +78,6 @@ sliderArrows.addEventListener("click", function (event) {
     }
   }
 });
-console.log(sliderDots.children.item(0));
 
 // set click events to dots
 function changeDots() {
@@ -95,7 +94,38 @@ function changeDots() {
       nextSlide.classList.add("slide-active");
       nextDot.classList.add("dot-active");
       heroSlideshowInt = setInterval(changeSlide, sliderTime);
-      console.log(event);
     });
   }
 }
+
+// NAV-MENU FOR MOBILE ---------------
+const navMobileMenu = document.getElementById("nav-mobile-menu");
+const navMobileIcon = document.getElementById("nav-mobile-icon");
+const navMobileIconClose = document.getElementById("nav-mobile-icon-close");
+const navMobileMenuLinks = document.getElementById("nav-mobile-menu-links");
+
+// set click events to open mobile menu ---------------------
+navMobileIcon.addEventListener("click", function (event) {
+  event.preventDefault();
+  navMobileMenu.classList.toggle("nav-mobile-menu-active");
+  navMobileIconClose.classList.toggle("nav-mobile-icon-close-active");
+  for (let i = 0; i < navMobileMenuLinks.childElementCount; i++) {
+    navMobileMenuLinks.children[i].children[0].classList.toggle(
+      "nav-mobile-links-active"
+    );
+  }
+});
+
+// set click events to close mobile menu ---------------------
+navMobileIconClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  navMobileMenu.classList.toggle("nav-mobile-menu-active");
+  navMobileIconClose.classList.toggle("nav-mobile-icon-close-active");
+  for (let i = 0; i < navMobileMenuLinks.childElementCount; i++) {
+    navMobileMenuLinks.children[i].children[0].classList.toggle(
+      "nav-mobile-links-active"
+    );
+  }
+});
+
+console.log(navMobileMenuLinks.children[0].classList);

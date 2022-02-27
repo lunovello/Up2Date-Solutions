@@ -15,21 +15,42 @@
     ></script>
   </head>
   <body>
-    <nav class="nav-primary" id="home">
-      <a href="#home"
-        ><img class="logo" src="images\Up2Date Solution logo-white.svg" alt=""
-      /></a>
-      <ul>
-        <li class="nav-links"><a href="#home">Home</a></li>
-        <li class="nav-links"><a href="#about">Why Choose Us?</a></li>
-        <li class="nav-links"><a href="#services">Services</a></li>
-      </ul>
-      <div>
-        <a href="#contact"
-          ><button class="nav btn nav-btn">Contact Us</button></a
-        >
+    <nav class="nav" id="home">
+      <div class="logo">
+        <a href="#home"
+          ><img src="images\Up2Date Solution logo-white.svg" alt="" />
+        </a>
+      </div>
+      <div class="nav-primary">
+        <ul>
+          <li><a class="nav-links" href="#home">Home</a></li>
+          <li><a class="nav-links" href="#about">Why Choose Us?</a></li>
+          <li><a class="nav-links" href="#services">Services</a></li>
+          <a href="#contact"
+            ><button class="btn nav-btn">Contact Us</button>
+          </a>
+        </ul>
+        <div></div>
+      </div>
+      <div class="nav-mobile" id="nav-mobile">
+        <button class="nav-mobile-icon" id="nav-mobile-icon">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="nav-mobile-icon-close" id="nav-mobile-icon-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="nav-mobile-menu" id="nav-mobile-menu">
+          <ul id="nav-mobile-menu-links">
+            <li><a class="nav-mobile-links" href="#home">Home</a></li>
+            <li>
+              <a class="nav-mobile-links" href="#about">Why Choose Us?</a>
+            </li>
+            <li><a class="nav-mobile-links" href="#services">Services</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+
     <header class="hero-slideshow" id="hero-slideshow">
       <div id="slides">
         <div class="hero-1 slide container">
