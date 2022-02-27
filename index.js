@@ -22,7 +22,7 @@ function initSlider() {
     newDot.classList.add("dot");
     newDot.id = `dot${slideArr.indexOf(slide) + 1}`;
     sliderDots.appendChild(newDot);
-    // Setting active slide
+    // Setting initiale slide
     slides.firstElementChild.classList.add("slide-active");
     sliderDots.firstElementChild.classList.add("dot-active");
     activeSlide = slides.getElementsByClassName("slide-active")[0];
@@ -99,14 +99,14 @@ function changeDots() {
 }
 
 // NAV-MENU FOR MOBILE ---------------
+const navMobile = document.getElementById("nav-mobile");
 const navMobileMenu = document.getElementById("nav-mobile-menu");
 const navMobileIcon = document.getElementById("nav-mobile-icon");
 const navMobileIconClose = document.getElementById("nav-mobile-icon-close");
 const navMobileMenuLinks = document.getElementById("nav-mobile-menu-links");
 
-// set click events to open mobile menu ---------------------
-navMobileIcon.addEventListener("click", function (event) {
-  event.preventDefault();
+// Main mobile menu toggle function used by event clickers
+function toggleMobileMenu() {
   navMobileMenu.classList.toggle("nav-mobile-menu-active");
   navMobileIconClose.classList.toggle("nav-mobile-icon-close-active");
   for (let i = 0; i < navMobileMenuLinks.childElementCount; i++) {
@@ -114,18 +114,39 @@ navMobileIcon.addEventListener("click", function (event) {
       "nav-mobile-links-active"
     );
   }
+}
+
+// set click events to open mobile menu ---------------------
+navMobileIcon.addEventListener("click", function (event) {
+  event.preventDefault();
+  toggleMobileMenu();
 });
 
 // set click events to close mobile menu ---------------------
 navMobileIconClose.addEventListener("click", function (event) {
   event.preventDefault();
-  navMobileMenu.classList.toggle("nav-mobile-menu-active");
-  navMobileIconClose.classList.toggle("nav-mobile-icon-close-active");
-  for (let i = 0; i < navMobileMenuLinks.childElementCount; i++) {
-    navMobileMenuLinks.children[i].children[0].classList.toggle(
-      "nav-mobile-links-active"
-    );
+  toggleMobileMenu();
+});
+
+// Close mobile menu by clicking off menu ---------------------
+window.addEventListener("click", function (event) {
+  if (navMobileMenu.classList.contains("nav-mobile-menu-active")) {
+    if (!event.composedPath().includes(navMobile)) {
+      toggleMobileMenu();
+    }
   }
 });
 
-console.log(navMobileMenuLinks.children[0].classList);
+// Closes mobile menu when you click a link ---------------------
+function initMobileLinks() {
+  for (let i = 0; i < navMobileMenuLinks.childElementCount; i++) {
+    navMobileMenuLinks.children[i].children[0].addEventListener(
+      "click",
+      function (event) {
+        toggleMobileMenu();
+      }
+    );
+  }
+}
+
+initMobileLinks();

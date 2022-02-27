@@ -197,36 +197,38 @@ hr {
 }
 
 .nav-mobile-icon {
-  font-size: 2.5rem;
-  background: transparent;
+  width: 55px;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.5);
   border: none;
-  color: white;
-  text-shadow: 0 0px 3px black;
+  border-radius: 5px;
+  background: transparent;
   cursor: pointer;
-  transition: 0.05s linear;
+  position: fixed;
+  top: 20px;
+  backdrop-filter: blur(2px) contrast(0.1) brightness(2) opacity(0.5) invert(4);
+  transition: 0.1s ease;
 }
-.nav-mobile-icon:hover,
-.nav-mobile-icon-close:hover {
-  transform: scale(1.04) translateY(-2px);
-  text-shadow: 0 2px 3px black;
+.nav-mobile-icon:hover {
+  transform: scale(1.1);
 }
 
 .nav-mobile-menu {
   display: flex;
   justify-content: flex-start;
-  padding-top: 20vh;
+  padding-top: 10vh;
   align-items: center;
   flex-direction: column;
   position: fixed;
   inset: 0 0 0 120%;
-  border-left: 4px ridge white;
-  border-radius: 20px;
-  background: #0095ff25;
-  box-shadow: inset 5px 0 15px black;
-  backdrop-filter: blur(10px) contrast(0.5) saturate(2);
+  border-left: 4px ridge rgba(255, 255, 255, 0.705);
+  border-radius: 20px 0 0 20px;
+  background: #74c5ff34;
+  /* box-shadow: inset 5px 0 15px black; */
+  backdrop-filter: blur(10px) contrast(0.5);
   gap: 10vh;
   cursor: grab;
-  transition: 0.8s ease;
+  transition: inset 0.8s ease;
 }
 .nav-mobile-menu-active {
   inset: 0 0 0 20%;
@@ -237,15 +239,19 @@ hr {
   background: transparent;
   border: none;
   color: white;
-  text-shadow: 0 0px 3px black;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   z-index: 99999;
   position: fixed;
   right: -20%;
-  transition: 0.8s linear;
+  transition: 0.1s ease-out, right 0.8s linear;
 }
+.nav-mobile-icon-close:hover {
+  transform: scale(1.04) translateY(-1px);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 .nav-mobile-icon-close-active {
-  transition: 0.8s linear;
   right: 8%;
 }
 
@@ -257,23 +263,22 @@ hr {
   position: relative;
   right: -100%;
   font-family: "Alegreya Sans", sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: max(min(4.5vw, 3rem), 1.8rem);
   line-height: 15vh;
   text-decoration: none;
   text-align: center;
-  color: rgb(214, 214, 214);
-  text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  color: rgba(209, 227, 255, 0.795);
   cursor: pointer;
-  transition: 0.4s ease-in-out;
 }
 .nav-mobile-links:hover {
   color: white;
-  text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 3px black;
 }
 .nav-mobile-links-active {
   right: 0;
-  transition: 0.4s ease-in-out;
+  transition: right 0.4s ease-in-out, 0.1s ease;
 }
 
 .hero-slideshow {
@@ -718,12 +723,12 @@ footer p {
 
   .nav-mobile {
     width: 100%;
+    margin-right: 10px;
     display: flex;
     justify-content: flex-end;
     white-space: nowrap;
     text-decoration: none;
     text-align: center;
-    transition: 0.08s ease-out;
   }
 
   .slide {
