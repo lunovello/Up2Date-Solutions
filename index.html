@@ -15,259 +15,286 @@
     ></script>
   </head>
   <body>
-    <nav class="nav" id="home">
-      <div class="logo">
-        <a href="#home"
-          ><img src="images\Up2Date Solution logo-white.svg" alt="" />
-        </a>
-      </div>
-      <div class="nav-primary">
-        <ul>
-          <li><a class="nav-links" href="#home">Home</a></li>
-          <li><a class="nav-links" href="#about">Why Choose Us?</a></li>
-          <li><a class="nav-links" href="#services">Services</a></li>
-          <a href="#contact"
-            ><button class="btn nav-btn">Contact Us</button>
+    <main class="main-content" id="main-content">
+      <nav class="nav" id="home">
+        <div class="logo">
+          <a href="#home"
+            ><img src="images\Up2Date Solution logo-white.svg" alt="" />
           </a>
-        </ul>
-        <div></div>
-      </div>
-      <div class="nav-mobile" id="nav-mobile">
-        <button class="nav-mobile-icon" id="nav-mobile-icon">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button class="nav-mobile-icon-close" id="nav-mobile-icon-close">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="nav-mobile-menu" id="nav-mobile-menu">
-          <ul id="nav-mobile-menu-links">
-            <li><a class="nav-mobile-links" href="#home">Home</a></li>
+        </div>
+        <div class="nav-primary">
+          <ul>
             <li>
-              <a class="nav-mobile-links" href="#about">Why Choose Us?</a>
+              <a class="nav-links" id="nav-links-home" href="#home">Home</a>
             </li>
-            <li><a class="nav-mobile-links" href="#services">Services</a></li>
-            <li><a class="nav-mobile-links" href="#contact">Contact Us</a></li>
+            <li><a class="nav-links" href="#about">Why Choose Us?</a></li>
+            <li><a class="nav-links" href="#services">Services</a></li>
+            <a href="#contact"
+              ><button class="btn nav-btn">Contact Us</button>
+            </a>
           </ul>
+          <div></div>
         </div>
-      </div>
-    </nav>
-
-    <header class="hero-slideshow" id="hero-slideshow">
-      <div id="slides">
-        <div class="hero-1 slide container">
-          <h1>Quality Without Compromise</h1>
+        <div class="nav-mobile" id="nav-mobile">
+          <!-- <div class="nav-mobile-icon-bg"></div> -->
+          <!-- <button class="nav-mobile-icon" id="nav-mobile-icon"></button> -->
+          <button class="nav-mobile-icon-close" id="nav-mobile-icon-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="nav-mobile-menu" id="nav-mobile-menu">
+            <ul id="nav-mobile-menu-links">
+              <li><a class="nav-mobile-links" href="#home">Home</a></li>
+              <li>
+                <a class="nav-mobile-links" href="#about">Why Choose Us?</a>
+              </li>
+              <li><a class="nav-mobile-links" href="#services">Services</a></li>
+              <li>
+                <a class="nav-mobile-links" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="hero-slideshow" id="hero-slideshow" data-observe="home">
+        <div id="slides">
+          <div class="hero-1 slide container">
+            <h1>Quality Without Compromise</h1>
+            <p>
+              Certified and trusted professionals for all your IT solution
+              requirements.
+            </p>
+            <a href="#contact"><button class="btn">Learn More</button></a>
+          </div>
+          <div class="hero-2 slide container">
+            <h1>Solutions To Help Your Business Grow</h1>
+            <p>
+              Let our team of advisors show you how your business can compete in
+              an ever growing digital world. Learn how to transition and adopt
+              solutions for remote working in your business!
+            </p>
+            <a href="#contact"><button class="btn">Learn More</button></a>
+          </div>
+          <div class="hero-3 slide container">
+            <h1>Migrate to Microsoft 365</h1>
+            <p>
+              Learn the benefits of Microsoft Azure, Office 365 and other
+              security features that can empower your business to grow, stay
+              relevant, and ensure compliance.
+            </p>
+            <a href="#contact"><button class="btn">Learn More</button></a>
+          </div>
+        </div>
+        <div class="slider-arrows" id="slider-arrows">
+          <button
+            class="fa-solid fa-angle-left slider-prev"
+            id="slider-prev"
+          ></button>
+          <button
+            class="fa-solid fa-angle-right slider-next"
+            id="slider-next"
+          ></button>
+        </div>
+        <div class="slider-dots" id="slider-dots"></div>
+      </header>
+      <section class="about container" id="about" data-observe="about">
+        <div class="about-text">
+          <h1 class="heading">Why Choose Us?</h1>
+          <hr class="center-line" />
           <p>
-            Certified and trusted professionals for all your IT solution
-            requirements.
+            UP2DATE is an Innovative IT Consulting company committed to staying
+            current with technology and cloud services but most importantly
+            everyday solutions that attribute to your organization’s success.
+            Our goal is to ensure you reach your goals! Trust in our subject
+            matter experts to get you there.
           </p>
-          <a href="#contact"><button class="btn">Learn More</button></a>
         </div>
-        <div class="hero-2 slide container">
-          <h1>Solutions To Help Your Business Grow</h1>
-          <p>
-            Let our team of advisors show you how your business can compete in
-            an ever growing digital world. Learn how to transition and adopt
-            solutions for remote working in your business!
-          </p>
-          <a href="#contact"><button class="btn">Learn More</button></a>
-        </div>
-        <div class="hero-3 slide container">
-          <h1>Migrate to Microsoft 365</h1>
-          <p>
-            Learn the benefits of Microsoft Azure, Office 365 and other security
-            features that can empower your business to grow, stay relevant, and
-            ensure compliance.
-          </p>
-          <a href="#contact"><button class="btn">Learn More</button></a>
-        </div>
-      </div>
-      <div class="slider-arrows" id="slider-arrows">
-        <button
-          class="fa-solid fa-angle-left slider-prev"
-          id="slider-prev"
-        ></button>
-        <button
-          class="fa-solid fa-angle-right slider-next"
-          id="slider-next"
-        ></button>
-      </div>
-      <div class="slider-dots" id="slider-dots"></div>
-    </header>
-    <section class="about container" id="about">
-      <div class="about-text">
-        <h1 class="heading">Why Choose Us?</h1>
-        <hr class="center-line" />
+        <img class="about-image" src="images\Why-Choose-Us.jpg" alt="" />
+      </section>
+      <section data-observe="services">
+        <section class="services container" id="services">
+          <h1 class="heading">Services</h1>
+          <hr class="center-line white" />
+          <div class="services-wrapper">
+            <div class="service1 service">
+              <div class="icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h5 class="service-heading">Technical Focus Areas</h5>
+              <ul>
+                <li>
+                  Collaboration (Microsoft 365, EMS + Intune, Azure ADC, ADFS
+                  Authentication, Exchange Online, Microsoft Teams, SharePoint,
+                  & Advanced Threat Protection)
+                </li>
+                <li>
+                  Infrastructure (Windows Server, Hyper-V and Azure
+                  Virtualization – Windows Virtual Environment)
+                </li>
+                <li>Directory Services (Active Directory, Azure AD)</li>
+              </ul>
+            </div>
+            <div class="service2 service">
+              <div class="icon">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+              <h5 class="service-heading">Service Focus Areas</h5>
+              <ul>
+                <li>Operations Management</li>
+                <li>Consulting + Architecting</li>
+                <li>
+                  Migrations (Messaging, SharePoint, Skype, Tenant to Tenant)
+                </li>
+                <li>Assessment and planning</li>
+                <li>System build and deployment</li>
+              </ul>
+            </div>
+            <div class="service3 service">
+              <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+              <h5 class="service-heading">Leadership Focus Areas</h5>
+              <ul>
+                <li>
+                  Empowering organization success through the effective use of
+                  team resources
+                </li>
+                <li>Ongoing skill and career development</li>
+                <li>
+                  Active prioritization to achieve short term requirements and
+                  long-term goals
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="partners container" id="partners">
+          <h1 class="heading">Partners</h1>
+          <hr class="center-line" />
+          <div class="partner-logos-container">
+            <div class="partner-logo-wrapper">
+              <a href="https://www.microsoft.com/en-ca" target="_blank"
+                ><img
+                  src="images\Partner Logos\Microsoft Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+            <div class="partner-logo-wrapper">
+              <a href="https://www.logitech.com/en-ca" target="_blank"
+                ><img
+                  src="images\Partner Logos\Logitech Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+            <div class="partner-logo-wrapper">
+              <a href="https://www.bittitan.com/" target="_blank"
+                ><img
+                  src="images\Partner Logos\BitTitan Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+            <div class="partner-logo-wrapper">
+              <a href="https://ui.com/consoles" target="_blank"
+                ><img
+                  src="images\Partner Logos\Unifi Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+            <div class="partner-logo-wrapper">
+              <a href="https://www.audiocodes.com/" target="_blank"
+                ><img
+                  src="images\Partner Logos\Audiocodes Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+            <div class="partner-logo-wrapper">
+              <a href="https://www.hpe.com/us/en/home.html" target="_blank"
+                ><img
+                  src="images\Partner Logos\Hewlett-Packard Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+            <div class="partner-logo-wrapper">
+              <a href="https://www.jabra.ca/" target="_blank"
+                ><img
+                  src="images\Partner Logos\Jabra Carousel.png"
+                  alt=""
+                  class="partner-logo"
+              /></a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="contact container" id="contact" data-observe="contact">
+        <h1 class="heading">Ready to talk?</h1>
+        <hr class="center-line white" />
         <p>
-          UP2DATE is an Innovative IT Consulting company committed to staying
-          current with technology and cloud services but most importantly
-          everyday solutions that attribute to your organization’s success. Our
-          goal is to ensure you reach your goals! Trust in our subject matter
-          experts to get you there.
+          Contact us today to learn more about how we can help your business
+          succeed.
         </p>
-      </div>
-      <img class="about-image" src="images\Why-Choose-Us.jpg" alt="" />
-    </section>
-    <section class="services container" id="services">
-      <h1 class="heading">Services</h1>
-      <hr class="center-line white" />
-      <div class="services-wrapper">
-        <div class="service1 service">
-          <div class="icon">
-            <i class="fa-solid fa-database"></i>
+        <form class="contact-form" action="#">
+          <div class="formline1">
+            <div class="form-name">
+              <label for="name" class="required">Name </label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-email">
+              <label for="email" class="required">Email Address </label>
+              <input type="email" id="email" required />
+            </div>
           </div>
-          <h5 class="service-heading">Technical Focus Areas</h5>
-          <ul>
-            <li>
-              Collaboration (Microsoft 365, EMS + Intune, Azure ADC, ADFS
-              Authentication, Exchange Online, Microsoft Teams, SharePoint, &
-              Advanced Threat Protection)
-            </li>
-            <li>
-              Infrastructure (Windows Server, Hyper-V and Azure Virtualization –
-              Windows Virtual Environment)
-            </li>
-            <li>Directory Services (Active Directory, Azure AD)</li>
-          </ul>
-        </div>
-        <div class="service2 service">
-          <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
-          <h5 class="service-heading">Service Focus Areas</h5>
-          <ul>
-            <li>Operations Management</li>
-            <li>Consulting + Architecting</li>
-            <li>Migrations (Messaging, SharePoint, Skype, Tenant to Tenant)</li>
-            <li>Assessment and planning</li>
-            <li>System build and deployment</li>
-          </ul>
-        </div>
-        <div class="service3 service">
-          <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
-          <h5 class="service-heading">Leadership Focus Areas</h5>
-          <ul>
-            <li>
-              Empowering organization success through the effective use of team
-              resources
-            </li>
-            <li>Ongoing skill and career development</li>
-            <li>
-              Active prioritization to achieve short term requirements and
-              long-term goals
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="partners container" id="partners">
-      <h1 class="heading">Partners</h1>
-      <hr class="center-line" />
-      <div class="partner-logos-container">
-        <div class="partner-logo-wrapper">
-          <a href="https://www.microsoft.com/en-ca" target="_blank"
-            ><img
-              src="images\Partner Logos\Microsoft Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-        <div class="partner-logo-wrapper">
-          <a href="https://www.logitech.com/en-ca" target="_blank"
-            ><img
-              src="images\Partner Logos\Logitech Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-        <div class="partner-logo-wrapper">
-          <a href="https://www.bittitan.com/" target="_blank"
-            ><img
-              src="images\Partner Logos\BitTitan Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-        <div class="partner-logo-wrapper">
-          <a href="https://ui.com/consoles" target="_blank"
-            ><img
-              src="images\Partner Logos\Unifi Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-        <div class="partner-logo-wrapper">
-          <a href="https://www.audiocodes.com/" target="_blank"
-            ><img
-              src="images\Partner Logos\Audiocodes Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-        <div class="partner-logo-wrapper">
-          <a href="https://www.hpe.com/us/en/home.html" target="_blank"
-            ><img
-              src="images\Partner Logos\Hewlett-Packard Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-        <div class="partner-logo-wrapper">
-          <a href="https://www.jabra.ca/" target="_blank"
-            ><img
-              src="images\Partner Logos\Jabra Carousel.png"
-              alt=""
-              class="partner-logo"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <section class="contact container" id="contact">
-      <h1 class="heading">Ready to talk?</h1>
-      <hr class="center-line white" />
-      <p>
-        Contact us today to learn more about how we can help your business
-        succeed.
-      </p>
-      <form class="contact-form" action="#">
-        <div class="formline1">
-          <div class="form-name">
-            <label for="name" class="required">Name </label>
-            <input type="text" id="name" required />
+          <div class="formline2">
+            <div class="form-company">
+              <label for="company">Company </label>
+              <input type="text" id="company" />
+            </div>
+            <div class="form-phone">
+              <label for="phone" class="form-phone">Phone Number </label>
+              <input type="tel" id="phone" />
+            </div>
           </div>
-          <div class="form-email">
-            <label for="email" class="required">Email Address </label>
-            <input type="email" id="email" required />
+          <div class="formline3 form-subject">
+            <label for="subject" class="form-subject">Subject </label>
+            <input type="text" id="subject" />
           </div>
-        </div>
-        <div class="formline2">
-          <div class="form-company">
-            <label for="company">Company </label>
-            <input type="text" id="company" />
+          <div class="formline4 form-message">
+            <label for="message" class="form-message">Message </label>
+            <textarea name="message" id="message" cols="91" rows="8"></textarea>
           </div>
-          <div class="form-phone">
-            <label for="phone" class="form-phone">Phone Number </label>
-            <input type="tel" id="phone" />
-          </div>
-        </div>
-        <div class="formline3 form-subject">
-          <label for="subject" class="form-subject">Subject </label>
-          <input type="text" id="subject" />
-        </div>
-        <div class="formline4 form-message">
-          <label for="message" class="form-message">Message </label>
-          <textarea name="message" id="message" cols="91" rows="8"></textarea>
-        </div>
-        <button class="btn">Submit</button>
-      </form>
-    </section>
-    <footer class="footer">
-      <p>
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        | Up 2 Date Solutions Inc. | All Rights Reserved.
-      </p>
-    </footer>
-
+          <button class="btn">Submit</button>
+        </form>
+      </section>
+      <footer class="footer">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          | Up 2 Date Solutions Inc. | All Rights Reserved.
+        </p>
+      </footer>
+    </main>
+    <nav class="mobile-nav">
+      <a href="#home"
+        ><button class="mobile-nav-btn" data-section="home">
+          <i class="fa-solid fa-house"></i></button
+      ></a>
+      <a href="#about"
+        ><button class="mobile-nav-btn" data-section="about">
+          <i class="fa-solid fa-circle-info"></i></button
+      ></a>
+      <a href="#services"
+        ><button class="mobile-nav-btn" data-section="services">
+          <i class="fa-solid fa-gears"></i></button
+      ></a>
+      <a href="#contact"
+        ><button class="mobile-nav-btn" data-section="contact">
+          <i class="fa-solid fa-envelope"></i></button
+      ></a>
+    </nav>
     <script src="index.js" defer></script>
   </body>
 </html>
