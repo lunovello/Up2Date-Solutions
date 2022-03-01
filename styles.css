@@ -14,6 +14,7 @@
 
 /* STYLES */
 * {
+  caret-color: transparent;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -80,6 +81,7 @@ i,
 img,
 a {
   user-select: none;
+  text-decoration: none;
 }
 
 .btn {
@@ -319,12 +321,12 @@ hr {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 .slide-active {
   opacity: 1;
   z-index: 99;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .slide h1 {
@@ -676,18 +678,20 @@ hr {
 
 .contact-form input {
   width: 100%;
-  padding: 0 5px;
+  padding: 5px;
   margin-bottom: 1.5em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  line-height: 2.5em;
+  line-height: 1.5em;
   color: rgb(50, 50, 50);
+  caret-color: rgb(34, 34, 34);
 }
 
 .contact-form textarea {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  padding: 0 5px;
+  padding: 5px;
+  caret-color: rgb(34, 34, 34);
 }
 
 .contact-form button {
@@ -831,11 +835,11 @@ footer p {
     width: 100%;
     margin-left: 0;
   }
-}
+  /* }
 
-@media (max-width: 450px) {
+@media (max-width: 450px) { */
   .main-content {
-    padding-bottom: 10vh;
+    padding-bottom: 8vh;
   }
 
   .nav {
@@ -848,15 +852,21 @@ footer p {
     margin-right: 0;
   }
 
+  .logo img {
+    height: 20vw;
+    max-height: 70px;
+  }
+
   .mobile-nav {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     position: fixed;
     bottom: 0;
     display: grid;
+    border: none;
     grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(53, 53, 53);
-    border: 5px ridge grey;
+    background: var(--heading-color);
+
     z-index: 999999;
   }
 
@@ -870,29 +880,30 @@ footer p {
     align-items: center;
     flex-direction: column;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
     line-height: 1.1;
     color: rgb(255, 255, 255);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top-width: 0.1px;
     text-shadow: 0 0 3px black;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: linear-gradient(
-      to bottom right,
-      var(--main-color),
-      var(--secondary-color)
-    );
+    background: rgb(17, 17, 17);
+    filter: saturate(0.8);
     transition: 0.1s ease;
   }
-  .mobile-nav button:hover {
-    filter: brightness(1.2);
+
+  .mobile-nav-active {
+    color: rgb(0, 209, 216) !important;
+    text-shadow: 0 0 5px rgba(131, 251, 255, 0.5) !important;
   }
 
-  .mobile-nav-active,
-  .mobile-nav-active:hover {
-    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.8);
-    filter: brightness(1.7) saturate(1.5)
-      drop-shadow(0 0 5px rgba(0, 183, 255, 0.281));
+  .mobile-nav i {
+    margin-bottom: 5px;
+    font-size: 4vw;
+  }
+
+  .mobile-nav span {
+    font-size: max(2vw, 0.8rem);
   }
 }

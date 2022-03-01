@@ -174,6 +174,8 @@ const navMobileMenuLinks = document.getElementById("nav-mobile-menu-links");
 //   console.log(event);
 // });
 
+// observer.root.target.style.border = "2px solid #44aa44";
+
 const sections = document.querySelectorAll(`[data-observe]`);
 const mobileButtons = document.querySelectorAll(`[data-section]`);
 
@@ -191,6 +193,3 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
   observer.observe(section);
 });
-console.log(observer);
-
-// observer.root.target.style.border = "2px solid #44aa44";
