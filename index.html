@@ -24,64 +24,54 @@
         </div>
         <div class="nav-primary">
           <ul>
-            <li>
-              <a class="nav-links" id="nav-links-home" href="#home">Home</a>
+            <li class="nav-primary-about">
+              <a class="nav-links" href="#about">Why Choose Us?</a>
             </li>
-            <li><a class="nav-links" href="#about">Why Choose Us?</a></li>
-            <li><a class="nav-links" href="#services">Services</a></li>
-            <a href="#contact"
-              ><button class="btn nav-btn">Contact Us</button>
-            </a>
+            <li class="nav-primary-services">
+              <a class="nav-links" href="#services">Services</a>
+            </li>
+            <li class="nav-primary-contact">
+              <a href="#contact"
+                ><button class="btn nav-btn">Contact Us</button>
+              </a>
+            </li>
           </ul>
           <div></div>
-        </div>
-        <div class="nav-mobile" id="nav-mobile">
-          <!-- <div class="nav-mobile-icon-bg"></div> -->
-          <!-- <button class="nav-mobile-icon" id="nav-mobile-icon"></button> -->
-          <button class="nav-mobile-icon-close" id="nav-mobile-icon-close">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <div class="nav-mobile-menu" id="nav-mobile-menu">
-            <ul id="nav-mobile-menu-links">
-              <li><a class="nav-mobile-links" href="#home">Home</a></li>
-              <li>
-                <a class="nav-mobile-links" href="#about">Why Choose Us?</a>
-              </li>
-              <li><a class="nav-mobile-links" href="#services">Services</a></li>
-              <li>
-                <a class="nav-mobile-links" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
       <header class="hero-slideshow" id="hero-slideshow" data-observe="home">
         <div id="slides">
-          <div class="hero-1 slide container">
-            <h1>Quality Without Compromise</h1>
-            <p>
-              Certified and trusted professionals for all your IT solution
-              requirements.
-            </p>
-            <a href="#contact"><button class="btn">Learn More</button></a>
+          <div class="hero-1 hero-image">
+            <div class="slide container">
+              <h1>Quality Without Compromise</h1>
+              <p>
+                Certified and trusted professionals for all your IT solution
+                requirements.
+              </p>
+              <a href="#contact"><button class="btn">Learn More</button></a>
+            </div>
           </div>
-          <div class="hero-2 slide container">
-            <h1>Solutions To Help Your Business Grow</h1>
-            <p>
-              Let our team of advisors show you how your business can compete in
-              an ever growing digital world. Learn how to transition and adopt
-              solutions for remote working in your business!
-            </p>
-            <a href="#contact"><button class="btn">Learn More</button></a>
+          <div class="hero-2 hero-image">
+            <div class="slide container">
+              <h1>Solutions To Help Your Business Grow</h1>
+              <p>
+                Let our team of advisors show you how your business can compete
+                in an ever growing digital world. Learn how to transition and
+                adopt solutions for remote working in your business!
+              </p>
+              <a href="#contact"><button class="btn">Learn More</button></a>
+            </div>
           </div>
-          <div class="hero-3 slide container">
-            <h1>Migrate to Microsoft 365</h1>
-            <p>
-              Learn the benefits of Microsoft Azure, Office 365 and other
-              security features that can empower your business to grow, stay
-              relevant, and ensure compliance.
-            </p>
-            <a href="#contact"><button class="btn">Learn More</button></a>
+          <div class="hero-3 hero-image">
+            <div class="slide container">
+              <h1>Migrate to Microsoft 365</h1>
+              <p>
+                Learn the benefits of Microsoft Azure, Office 365 and other
+                security features that can empower your business to grow, stay
+                relevant, and ensure compliance.
+              </p>
+              <a href="#contact"><button class="btn">Learn More</button></a>
+            </div>
           </div>
         </div>
         <div class="slider-arrows" id="slider-arrows">
@@ -268,37 +258,60 @@
         </form>
       </section>
       <footer class="footer">
-        <p>
+        <div class="footer-socials">
+          <a
+            class="social-links linkedin-icon"
+            href="https://www.linkedin.com/company/up2date-solutions-inc/"
+            target="_blank"
+            ><img src="images/linkedin-logo.svg" alt=""
+          /></a>
+          <a
+            class="social-links credly-icon"
+            href="https://www.credly.com/users/vincenzo-zappulla/badges"
+            target="_blank"
+            ><img src="images/credly-logo.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="footer-links">
+          <p>
+            <a href="#home">Home</a><span> | </span
+            ><a href="#about">Why Choose Us?</a><span> | </span>
+            <a href="#services">Services</a><span> | </span
+            ><a href="#contact">Contact</a>
+          </p>
+        </div>
+        <div class="footer-copyright">
           Copyright &copy;
           <script>
             document.write(new Date().getFullYear());
           </script>
           | Up 2 Date Solutions Inc. | All Rights Reserved.
-        </p>
+        </div>
       </footer>
     </main>
     <nav class="mobile-nav">
       <a href="#home"
-        ><button class="mobile-nav-btn" data-section="home">
+        ><div class="mobile-nav-btn" data-section="home">
           <i class="fa-solid fa-house"></i><span>Home</span>
-        </button></a
+        </div></a
       >
       <a href="#about"
-        ><button class="mobile-nav-btn" data-section="about">
+        ><div class="mobile-nav-btn" data-section="about">
           <i class="fa-solid fa-circle-info"></i><span>About</span>
-        </button></a
+        </div></a
       >
       <a href="#services"
-        ><button class="mobile-nav-btn" data-section="services">
+        ><div class="mobile-nav-btn" data-section="services">
           <i class="fa-solid fa-gears"></i><span>Services</span>
-        </button></a
+        </div></a
       >
       <a href="#contact"
-        ><button class="mobile-nav-btn" data-section="contact">
+        ><div class="mobile-nav-btn" data-section="contact">
           <i class="fa-solid fa-envelope"></i><span>Contact</span>
-        </button></a
+        </div></a
       >
     </nav>
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
   </body>
 </html>

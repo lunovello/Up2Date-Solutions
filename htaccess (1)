@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?up2datesolutions\.com
+RewriteRule ^(.*)$ https://www.up2datesolutions.com/$1 [R,L]
