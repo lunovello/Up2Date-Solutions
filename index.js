@@ -115,7 +115,7 @@ slides.addEventListener("mousedown", (event) => {
   clearInterval(heroSlideshowInt);
 });
 
-window.addEventListener("mouseup", (event) => {
+slides.addEventListener("mouseup", (event) => {
   dragEndX = event.clientX;
   heroSlideshow.classList.remove("grabbing");
   slideshowDragChange(50);
@@ -129,6 +129,7 @@ function slideshowDragChange(dragLimit) {
   } else if (dragDifference > dragLimit) {
     changeSlideForward();
   }
+  dragDifference = 0;
 }
 
 // TOUCH EVENTS FOR SLIDESHOW (mobile)
